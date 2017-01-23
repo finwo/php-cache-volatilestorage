@@ -14,7 +14,7 @@
   },
   "require"          : {
     "php"        : ">=5.3",
-    "finwo/cache": "*",
+    "finwo/cache": "^0.4",
     "finwo/filelock": "*"
   }
 }

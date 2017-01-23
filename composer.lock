@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b654a89ea0736b4970f02dc90c84941c",
+    "content-hash": "102f1b243bb151950528fd75a71370dc",
     "packages": [
         {
             "name": "finwo/cache",
