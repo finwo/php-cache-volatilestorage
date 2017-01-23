@@ -1,0 +1,87 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b654a89ea0736b4970f02dc90c84941c",
+    "packages": [
+        {
+            "name": "finwo/cache",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/finwo/php-cache.git",
+                "reference": "68769a66e31049c934389f1d22fe09f88c6a4867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/finwo/php-cache/zipball/68769a66e31049c934389f1d22fe09f88c6a4867",
+                "reference": "68769a66e31049c934389f1d22fe09f88c6a4867",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Finwo\\Cache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Robin Bron",
+                    "email": "robin@finwo.nl"
+                }
+            ],
+            "time": "2017-01-23T13:06:05+00:00"
+        },
+        {
+            "name": "finwo/filelock",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/finwo/php-filelock.git",
+                "reference": "4b1e97b47b97c342dc9435f8e648eb3fa8bdb0bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/finwo/php-filelock/zipball/4b1e97b47b97c342dc9435f8e648eb3fa8bdb0bf",
+                "reference": "4b1e97b47b97c342dc9435f8e648eb3fa8bdb0bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Finwo\\FileLock\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Robin Bron",
+                    "email": "robin@finwo.nl"
+                }
+            ],
+            "time": "2017-01-23T12:32:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,20 @@
+{
+  "name"             : "finwo/cache-volatilestorage",
+  "minimum-stability": "stable",
+  "authors"          : [
+    {
+      "name" : "Robin Bron",
+      "email": "robin@finwo.nl"
+    }
+  ],
+  "autoload"         : {
+    "psr-4": {
+      "Finwo\\Cache\\": "src"
+    }
+  },
+  "require"          : {
+    "php"        : ">=5.3",
+    "finwo/cache": "*",
+    "finwo/filelock": "*"
+  }
+}
