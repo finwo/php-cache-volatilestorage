@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "102f1b243bb151950528fd75a71370dc",
+    "content-hash": "b8d536b6246d0f839cd17826cd948b2e",
     "packages": [
         {
             "name": "finwo/cache",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/finwo/php-cache.git",
-                "reference": "68769a66e31049c934389f1d22fe09f88c6a4867"
+                "reference": "53a60fd4705216e13716a43b76de333bb1254488"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/finwo/php-cache/zipball/68769a66e31049c934389f1d22fe09f88c6a4867",
-                "reference": "68769a66e31049c934389f1d22fe09f88c6a4867",
+                "url": "https://api.github.com/repos/finwo/php-cache/zipball/53a60fd4705216e13716a43b76de333bb1254488",
+                "reference": "53a60fd4705216e13716a43b76de333bb1254488",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
                     "email": "robin@finwo.nl"
                 }
             ],
-            "time": "2017-01-23T13:06:05+00:00"
+            "time": "2017-01-23T13:23:13+00:00"
         },
         {
             "name": "finwo/filelock",
@@ -72,6 +72,45 @@
                 }
             ],
             "time": "2017-01-23T12:32:00+00:00"
+        },
+        {
+            "name": "netresearch/jsonmapper",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweiske/jsonmapper.git",
+                "reference": "8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7",
+                "reference": "8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsonMapper": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@cweiske.de",
+                    "homepage": "http://github.com/cweiske/jsonmapper/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Map nested JSON structures onto PHP classes",
+            "time": "2017-01-27T21:01:41+00:00"
         }
     ],
     "packages-dev": [],

@@ -56,6 +56,33 @@ class VolatileStorage extends Cache
     }
 
     /**
+     * @param string $path
+     * @param array  $dataHolder
+     * @param null   $value
+     */
+    protected static function set_deep($path, &$dataHolder = array(), $value = null)
+    {
+        $keys = explode('.', $path);
+        while (count($keys)) {
+            $dataHolder = &$dataHolder[array_shift($keys)];
+        }
+        $dataHolder = $value;
+    }
+
+    /**
+     * @return \JsonMapper
+     */
+    protected static function getMapper()
+    {
+        static $cache = null;
+        if(is_null($cache)) {
+            $cache = new \JsonMapper();
+        }
+        return $cache;
+    }
+
+
+    /**
      * @param string $input
      *
      * @return string
@@ -108,28 +135,50 @@ class VolatileStorage extends Cache
      */
     protected function encode($input)
     {
-        try {
-            $output = serialize($input);
-
-            return $output;
-        } catch (\Exception $e) {
-            return $this->percentEncode($input);
-        }
+        return http_build_query(array(
+            "t" => gettype($input),
+            "c" => gettype($input) === 'object' ? get_class($input) : null,
+            "v" => $input,
+        ));
     }
 
     /**
      * @param string $input
      *
-     * @return string
+     * @return string|null
      */
     protected function decode($input)
     {
-        try {
-            $output = unserialize($input);
-
-            return $output;
-        } catch (\Exception $e) {
-            return $this->percentDecode($input);
+        $input = str_replace("\n", "", $input);
+        if(!strlen($input)) {
+            return null;
+        }
+        $data      = array();
+        $variables = explode('&', $input);
+        foreach ($variables as $variable) {
+            $components = explode('=', $variable);
+            $key        = str_replace(array( '[', ']' ), array( '.', '' ), self::percentDecode(array_shift($components)));
+            $value      = urldecode(array_shift($components));
+            self::set_deep($key, $data, $value);
+        }
+        switch ($data['t']) {
+            case 'boolean':
+                return filter_var($data['v'], FILTER_VALIDATE_BOOLEAN);
+            case 'integer':
+                return intval($data['v']);
+            case 'double':
+            case 'float':
+                return floatval($data['v']);
+            case 'object':
+                if(isset($data['c']) && strlen($data['c']) && class_exists($data['c']) && $data['c'] != 'stdClass' ) {
+                    $class  = $data['c'];
+                    $object = new $class();
+                    return self::getMapper()->map((object)$data['v'], $object);
+                } else {
+                    return json_decode(json_encode($data['v']));
+                }
+            default:
+                return $data['v'];
         }
     }
 
