@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "320a5187890eb2f30ac1045a15cdfe8d",
+    "content-hash": "27354a2485bc37c55d437bea6b00c839",
     "packages": [
         {
             "name": "finwo/cache",
@@ -75,16 +75,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v0.11.0",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "979abda4b128415c642b06f07db615e75cfd3173"
+                "reference": "a58388bdda93424363de20bc20fe0e349ec735ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/979abda4b128415c642b06f07db615e75cfd3173",
-                "reference": "979abda4b128415c642b06f07db615e75cfd3173",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/a58388bdda93424363de20bc20fe0e349ec735ee",
+                "reference": "a58388bdda93424363de20bc20fe0e349ec735ee",
                 "shasum": ""
             },
             "require-dev": {
@@ -94,7 +94,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "JsonMapper": "src/"
+                    "": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -104,13 +104,13 @@
             "authors": [
                 {
                     "name": "Christian Weiske",
-                    "email": "cweiske@cweiske.de",
-                    "homepage": "http://github.com/cweiske/jsonmapper/",
+                    "email": "christian.weiske@netresearch.de",
+                    "homepage": "http://www.netresearch.de/",
                     "role": "Developer"
                 }
             ],
             "description": "Map nested JSON structures onto PHP classes",
-            "time": "2016-04-14T21:59:35+00:00"
+            "time": "2015-09-24T12:43:26+00:00"
         }
     ],
     "packages-dev": [],

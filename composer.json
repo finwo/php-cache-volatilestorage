@@ -16,6 +16,6 @@
     "php"                   : ">=5.3",
     "finwo/cache"           : "^0.4",
     "finwo/filelock"        : "*",
-    "netresearch/jsonmapper": "^0.11"
+    "netresearch/jsonmapper": "0.10.*"
   }
 }
