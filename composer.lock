@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8d536b6246d0f839cd17826cd948b2e",
+    "content-hash": "320a5187890eb2f30ac1045a15cdfe8d",
     "packages": [
         {
             "name": "finwo/cache",
@@ -43,7 +43,7 @@
         },
         {
             "name": "finwo/filelock",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/finwo/php-filelock.git",
@@ -75,16 +75,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v1.1.1",
+            "version": "v0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7"
+                "reference": "979abda4b128415c642b06f07db615e75cfd3173"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7",
-                "reference": "8d0b6d5b9f5940757b44bc0ee2f930aae6d4a6c7",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/979abda4b128415c642b06f07db615e75cfd3173",
+                "reference": "979abda4b128415c642b06f07db615e75cfd3173",
                 "shasum": ""
             },
             "require-dev": {
@@ -110,7 +110,7 @@
                 }
             ],
             "description": "Map nested JSON structures onto PHP classes",
-            "time": "2017-01-27T21:01:41+00:00"
+            "time": "2016-04-14T21:59:35+00:00"
         }
     ],
     "packages-dev": [],
